@@ -30,6 +30,7 @@ public class CalculatorTest {
 		assertTrue(Calculator.add("1,2,3,4") == 10);
 		assertTrue(Calculator.add("1,2,3,4,5") == 15);
 	}
+<<<<<<< HEAD
 	@Test
 	public void testWithNewLine() {
 		assertTrue(Calculator.add("1\n2,3,4") == 10);
@@ -53,4 +54,6 @@ public class CalculatorTest {
 		assertTrue(e.getMessage().equals("negatives not allowed: -100, -2000, -3, -7"));
 	}
 //
+=======
+>>>>>>> 7988e2ba40e02d74beb36d89ec4164c0fe1ea6be
 }
