@@ -21,8 +21,8 @@ public class CalculatorTest {
 		assertTrue(Calculator.add("111") == 111);
 	}
 	
-//	@Test
-//	public void testWithTwoValue() {
-//		assertTrue(Calculator.add("1,2") == 1);
-//	}
+	@Test
+	public void testWithTwoValue() {
+		assertTrue(Calculator.add("1,2") == 3);
+	}
 }
