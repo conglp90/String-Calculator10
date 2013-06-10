@@ -30,4 +30,9 @@ public class CalculatorTest {
 		assertTrue(Calculator.add("1,2,3,4") == 10);
 		assertTrue(Calculator.add("1,2,3,4,5") == 15);
 	}
+	@Test
+	public void testWithNewLine() {
+		assertTrue(Calculator.add("1\n2,3,4") == 10);
+		assertTrue(Calculator.add("1\n2,3\n4") == 10);
+	}
 }
