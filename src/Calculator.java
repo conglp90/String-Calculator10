@@ -6,8 +6,13 @@ public class Calculator {
 		if(input==null||input.isEmpty())
 			return kq;
 		else 
-			kq =Integer.parseInt(input);
+			kq =toInt(input);
 		return kq;
 	}
 
+	private static int toInt(String input) {
+		return Integer.parseInt(input);
+	}
+
+	
 }
