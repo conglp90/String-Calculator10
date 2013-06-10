@@ -35,4 +35,22 @@ public class CalculatorTest {
 		assertTrue(Calculator.add("1\n2,3,4") == 10);
 		assertTrue(Calculator.add("1\n2,3\n4") == 10);
 	}
+	@Test
+	public void testWithOneCharDelimiter() {
+		assertTrue(Calculator.add("//;\n1\n2;3,4") == 10);
+	}
+	@Test
+	public void testWithNegativeNumber() {
+		Exception e = null;
+		// ////////////////////////////
+		try {
+			Calculator.add("-100,-2000,-3,-7");
+		} catch (Exception e1) {
+			// 
+			e = e1;
+			System.out.println(e.getMessage());
+		}
+		assertTrue(e.getMessage().equals("negatives not allowed: -100, -2000, -3, -7"));
+	}
+//
 }
