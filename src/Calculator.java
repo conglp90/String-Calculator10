@@ -1,8 +1,13 @@
 public class Calculator {
 
-	public static int add(Object object) {
+	public static int add(String input) {
 		// TODO Auto-generated method stub
-		return 0;
+		int kq=0;
+		if(input==null||input.isEmpty())
+			return kq;
+		else 
+			kq =Integer.parseInt(input);
+		return kq;
 	}
 
 }
