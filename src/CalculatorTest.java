@@ -25,4 +25,9 @@ public class CalculatorTest {
 	public void testWithTwoValue() {
 		assertTrue(Calculator.add("1,2") == 3);
 	}
+	@Test
+	public void testUnknownNumberOfValue() {
+		assertTrue(Calculator.add("1,2,3,4") == 10);
+		assertTrue(Calculator.add("1,2,3,4,5") == 15);
+	}
 }
